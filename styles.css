@@ -1,0 +1,126 @@
+/* ====== Estilo base ====== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc;
+  color: #333;
+  text-align: center; /* Centralizar tudo */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* ====== Títulos ====== */
+h1, h2 {
+  color: #fffcfc;
+  margin-bottom: 10px;
+}
+
+/* ====== Botões ====== */
+button {
+  background-color: #f5f5dc;
+  color: rgb(11, 10, 10);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block; /* Centralizar botão */
+}
+
+button:hover {
+  background-color: #dadada;
+}
+
+/* ====== Inputs ====== */
+input {
+  padding: 10px;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(20% - 30px);
+  display: block; /* Centralizar input */
+}
+
+/* ====== Labels ====== */
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* ====== Blocos coloridos ====== */
+#elementById,
+[name='elementByName'],
+.elementByClass {
+  padding: 10px;
+  margin: 10px auto;
+  width: 70%;
+  border-radius: 8px;
+  text-align: center; /* Centralizar texto dentro do bloco */
+}
+
+/* Cor inicial dos blocos */
+#elementById {
+  background-color: #e0f7fa;
+}
+
+[name='elementByName'] {
+  background-color: #e0f7fa;
+}
+
+.elementByClass {
+  background-color: #e0f7fa;
+}
+
+/* ====== Seções (caixas maiores) ====== */
+section {
+  background-color: #988888;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Cabeçalho com paginação ====== */
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.pagination li a,
+.pagination li span {
+  display: block;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #f5f5dc; /* Para combinar com o fundo */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.pagination li a:hover,
+.pagination li span:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  cursor: pointer;
+}
